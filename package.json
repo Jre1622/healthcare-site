@@ -1,0 +1,19 @@
+{
+  "name": "healthcare-site",
+  "version": "1.0.0",
+  "description": "```\r healthcare-site\r ├─ about.html\r ├─ contact.html\r ├─ css\r │  └─ styles.css\r ├─ fonts\r ├─ images\r ├─ index.html\r ├─ js\r │  └─ main.js\r ├─ robots.txt\r ├─ services.html\r └─ team.html",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./css/input.css -o ./css/styles.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.5"
+  }
+}
