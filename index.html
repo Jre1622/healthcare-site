@@ -54,37 +54,166 @@
       </div>
     </div>
 
-    <main class="flex-grow container mx-auto px-4 py-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Your Health, Our Priority</h2>
-
-        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-          <p class="text-gray-700 mb-4">
-            Welcome to our state-of-the-art healthcare facility. We are dedicated to providing the highest quality medical care to our community. Our team of experienced professionals is here to
-            support your health and well-being.
-          </p>
-          <p class="text-gray-700 mb-6">Explore our services, learn more about our team, or contact us to schedule an appointment.</p>
-
-          <div class="grid md:grid-cols-3 gap-4">
-            <a href="services.html" class="block p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 class="text-lg font-semibold text-blue-600 mb-2">Our Services</h3>
-              <p class="text-gray-600">Discover our comprehensive range of medical services</p>
-            </a>
-            <a href="about.html" class="block p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 class="text-lg font-semibold text-blue-600 mb-2">About Us</h3>
-              <p class="text-gray-600">Learn about our team and our commitment to your care</p>
-            </a>
-            <a href="contact.html" class="block p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-              <h3 class="text-lg font-semibold text-blue-600 mb-2">Contact Us</h3>
-              <p class="text-gray-600">Schedule an appointment or ask us any questions</p>
-            </a>
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Expert Healthcare Services for Your Well-being</h1>
+            <p class="text-xl mb-8 text-blue-100">Providing compassionate care and innovative medical solutions to our community.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md"> Schedule Appointment </a>
+              <a href="services.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full transition-colors shadow-md border border-white/20">
+                Our Services
+              </a>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Services Preview Section -->
+      <div class="bg-white py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Healthcare Services</h2>
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Primary Care</h3>
+              <p class="text-gray-600">Comprehensive health services for individuals and families.</p>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Specialized Care</h3>
+              <p class="text-gray-600">Expert medical care for specific health conditions.</p>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">Emergency Care</h3>
+              <p class="text-gray-600">24/7 emergency medical services when you need them most.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Section -->
+      <div class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Patients Say</h2>
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span class="text-blue-600 font-semibold text-xl">JD</span>
+                </div>
+                <div class="ml-4">
+                  <h3 class="font-semibold text-gray-800">John Doe</h3>
+                  <p class="text-gray-600 text-sm">Primary Care Patient</p>
+                </div>
+              </div>
+              <p class="text-gray-700">"The medical team here is exceptional. They take the time to listen and provide thorough care. I couldn't be happier with the service."</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span class="text-blue-600 font-semibold text-xl">MS</span>
+                </div>
+                <div class="ml-4">
+                  <h3 class="font-semibold text-gray-800">Mary Smith</h3>
+                  <p class="text-gray-600 text-sm">Specialized Care Patient</p>
+                </div>
+              </div>
+              <p class="text-gray-700">"The specialized care I received was outstanding. The staff is professional, caring, and always available when needed."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Experience Better Healthcare?</h2>
+          <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Schedule your appointment today and take the first step towards better health with our expert medical team.</p>
+          <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md"> Book Your Visit Now </a>
         </div>
       </div>
     </main>
 
-    <footer class="bg-gray-700 text-white text-center p-4">
-      <p>&copy; 2024 Healthcare Services. All rights reserved.</p>
+    <footer class="bg-gray-700 text-white p-8">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Brand/Mission Section -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Healthcare Services</h3>
+          <p class="text-gray-300 text-sm">Dedicated to providing exceptional healthcare services with compassion and expertise. Your health and well-being are our top priorities.</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services & Areas Served</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+          <div class="space-y-2">
+            <p class="text-gray-300">📞 <a href="tel:+1234567890" class="hover:text-white transition-colors">(123) 456-7890</a></p>
+            <p class="text-gray-300">✉️ <a href="mailto:contact@healthcareservices.com" class="hover:text-white transition-colors">contact@healthcareservices.com</a></p>
+            <div class="text-gray-300">
+              📍
+              <address class="inline-block">
+                123 Health St<br />
+                Wellness City, HC 45678
+              </address>
+            </div>
+            <div class="pt-4">
+              <h4 class="text-sm font-semibold mb-2">Hours of Operation</h4>
+              <p class="text-gray-300 text-sm">Mon-Fri: 9:00 AM - 5:00 PM</p>
+              <p class="text-gray-300 text-sm">Sat: 10:00 AM - 2:00 PM</p>
+              <p class="text-gray-300 text-sm">Sun: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="text-center text-gray-400 text-sm mt-8 pt-8 border-t border-gray-600">
+        <p>&copy; 2024 Healthcare Services. All rights reserved.</p>
+      </div>
     </footer>
 
     <!-- Mobile Menu Toggle Script -->
