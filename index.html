@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Healthcare Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-100 flex flex-col min-h-screen">
+  <body class="bg-gray-100 flex flex-col min-h-screen font-sans">
     <h1 class="text-3xl font-bold text-center text-blue-600 p-4">Welcome to Our Healthcare Services</h1>
 
     <!-- Sticky Navigation Container -->
@@ -56,62 +72,261 @@
 
     <main class="flex-grow">
       <!-- Hero Section -->
-      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-        <div class="container mx-auto px-4 py-16 md:py-24">
+      <div class="relative bg-cover bg-center min-h-[400px] flex items-center" style="background-image: url('./images/hero-background.jpeg')">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-blue-900/50"></div>
+
+        <div class="container relative mx-auto px-4 py-12 md:py-16">
           <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Expert Healthcare Services for Your Well-being</h1>
-            <p class="text-xl mb-8 text-blue-100">Providing compassionate care and innovative medical solutions to our community.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md"> Schedule Appointment </a>
-              <a href="services.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full transition-colors shadow-md border border-white/20">
-                Our Services
-              </a>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Expert Healthcare Services for Your Well-being</h1>
+            <p class="text-xl mb-8 text-gray-100">Providing compassionate care and innovative medical solutions to our community.</p>
+            <div class="flex justify-center">
+              <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md">Get in Touch</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Services Preview Section -->
-      <div class="bg-white py-16">
+      <!-- Why Choose Us Section -->
+      <div class="bg-gradient-to-b from-gray-50 to-white py-10 relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-100 rounded-full opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="container mx-auto px-4 relative">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-3">Serving With Love & Grace</h2>
+          <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">Our commitment to quality care and compassionate service sets us apart.</p>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              <!-- Trusted Caregivers -->
+              <div class="flex items-start space-x-4 bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">👨‍⚕️</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Trusted Caregivers</h3>
+                  <p class="text-gray-600">Our team consists of carefully selected, trained, and compassionate professionals committed to your wellbeing.</p>
+                </div>
+              </div>
+
+              <!-- In-Home Care -->
+              <div class="flex items-start space-x-4 bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">🏠</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Personalized In-Home Care</h3>
+                  <p class="text-gray-600">Receive quality healthcare in the comfort of your own home with personalized care plans tailored to your needs.</p>
+                </div>
+              </div>
+
+              <!-- Affordable Plans -->
+              <div class="flex items-start space-x-4 bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">💙</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Affordable Care Plans</h3>
+                  <p class="text-gray-600">Flexible and affordable payment options designed to provide quality care without financial strain.</p>
+                </div>
+              </div>
+
+              <!-- Local Trusted Business -->
+              <div class="flex items-start space-x-4 bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">🤝</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Your Local Trusted Partner</h3>
+                  <p class="text-gray-600">As a local business, we understand the needs of our community and are committed to serving our neighbors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specialized Care Services Section -->
+      <div class="bg-white py-12">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Healthcare Services</h2>
-          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div class="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-3">Specialized Care Services</h2>
+          <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">We provide a wide range of specialized care services to meet your specific healthcare needs.</p>
+
+          <div class="max-w-6xl mx-auto">
+            <!-- Services Grid with Creative Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Alzheimer's and Dementia Care -->
+              <div class="group relative bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+                <span class="text-4xl mb-4 block">🧠</span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Alzheimer's & Dementia Care</h3>
+                <p class="text-gray-600 text-sm relative z-10">Specialized support focusing on safety, comfort, and maintaining dignity for those with memory-related conditions.</p>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Primary Care</h3>
-              <p class="text-gray-600">Comprehensive health services for individuals and families.</p>
+
+              <!-- Parkinson's Care -->
+              <div class="group relative bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden md:transform md:translate-y-4">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+                <span class="text-4xl mb-4 block">⚕️</span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Parkinson's Care</h3>
+                <p class="text-gray-600 text-sm relative z-10">Tailored assistance for managing symptoms and improving quality of life for those with Parkinson's disease.</p>
+              </div>
+
+              <!-- Companion Care -->
+              <div class="group relative bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+                <span class="text-4xl mb-4 block">🤗</span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Companion Care</h3>
+                <p class="text-gray-600 text-sm relative z-10">Friendly companionship and social engagement to combat loneliness and support emotional wellbeing.</p>
+              </div>
+
+              <!-- Respite Care -->
+              <div class="group relative bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden md:transform md:translate-y-4">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+                <span class="text-4xl mb-4 block">🌟</span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Respite Care</h3>
+                <p class="text-gray-600 text-sm relative z-10">Temporary relief for family caregivers, ensuring your loved one receives uninterrupted quality care.</p>
+              </div>
+
+              <!-- Regular Check-ins -->
+              <div class="group relative bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+                <span class="text-4xl mb-4 block">📋</span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Regular Check-ins</h3>
+                <p class="text-gray-600 text-sm relative z-10">Scheduled visits to ensure wellbeing, medication adherence, and address evolving care needs promptly.</p>
+              </div>
+
+              <!-- Personal Care -->
+              <div class="group relative bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden md:transform md:translate-y-4">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+                <span class="text-4xl mb-4 block">💝</span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">Personal Care</h3>
+                <p class="text-gray-600 text-sm relative z-10">Dignified assistance with daily activities such as bathing, dressing, and personal hygiene.</p>
+              </div>
             </div>
-            <div class="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Specialized Care</h3>
-              <p class="text-gray-600">Expert medical care for specific health conditions.</p>
+
+            <div class="text-center mt-8">
+              <a href="services.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-semibold py-3 px-8 rounded-full transition-colors shadow-md">View All Services</a>
             </div>
-            <div class="bg-blue-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Areas We Serve Section -->
+      <div class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-3">Areas We Serve</h2>
+          <p class="text-gray-600 text-center max-w-3xl mx-auto mb-8">Proudly serving the Twin Cities metro area and surrounding communities with compassionate healthcare services.</p>
+
+          <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-gray-100">
+              <!-- Grid for all regions -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Minneapolis Area -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Minneapolis Area</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Downtown</li>
+                    <li>• Uptown</li>
+                    <li>• Northeast</li>
+                    <li>• Nokomis</li>
+                    <li>• Powderhorn</li>
+                    <li>• Longfellow</li>
+                  </ul>
+                </div>
+
+                <!-- St. Paul Area -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">St. Paul Area</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Downtown</li>
+                    <li>• Highland Park</li>
+                    <li>• Mac-Groveland</li>
+                    <li>• Summit Hill</li>
+                    <li>• Como Park</li>
+                    <li>• Merriam Park</li>
+                  </ul>
+                </div>
+
+                <!-- Northern Suburbs -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Northern Metro</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Blaine</li>
+                    <li>• Coon Rapids</li>
+                    <li>• Fridley</li>
+                    <li>• Mounds View</li>
+                    <li>• New Brighton</li>
+                    <li>• Shoreview</li>
+                  </ul>
+                </div>
+
+                <!-- Southern Suburbs -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Southern Metro</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Bloomington</li>
+                    <li>• Burnsville</li>
+                    <li>• Eagan</li>
+                    <li>• Eden Prairie</li>
+                    <li>• Edina</li>
+                    <li>• Richfield</li>
+                  </ul>
+                </div>
+
+                <!-- Western Suburbs -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Western Metro</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Plymouth</li>
+                    <li>• Minnetonka</li>
+                    <li>• Wayzata</li>
+                    <li>• St. Louis Park</li>
+                    <li>• Golden Valley</li>
+                    <li>• Hopkins</li>
+                  </ul>
+                </div>
+
+                <!-- Eastern Suburbs -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Eastern Metro</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Woodbury</li>
+                    <li>• Oakdale</li>
+                    <li>• Maplewood</li>
+                    <li>• White Bear Lake</li>
+                    <li>• North St. Paul</li>
+                    <li>• Stillwater</li>
+                  </ul>
+                </div>
+
+                <!-- Northwest Suburbs -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Northwest Metro</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Brooklyn Park</li>
+                    <li>• Maple Grove</li>
+                    <li>• Osseo</li>
+                    <li>• Rogers</li>
+                    <li>• Crystal</li>
+                    <li>• New Hope</li>
+                  </ul>
+                </div>
+
+                <!-- Southeast Suburbs -->
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-600 mb-3">Southeast Metro</h3>
+                  <ul class="space-y-1.5 text-sm text-gray-600">
+                    <li>• Cottage Grove</li>
+                    <li>• Inver Grove</li>
+                    <li>• South St. Paul</li>
+                    <li>• West St. Paul</li>
+                    <li>• Newport</li>
+                    <li>• Hastings</li>
+                  </ul>
+                </div>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Emergency Care</h3>
-              <p class="text-gray-600">24/7 emergency medical services when you need them most.</p>
+
+              <!-- Contact Call to Action -->
+              <div class="mt-8 text-center bg-blue-50 rounded-xl p-6">
+                <p class="text-gray-700 mb-4">Not sure if we serve your area? Contact us to find out!</p>
+                <div class="space-x-4">
+                  <a href="tel:+1234567890" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-semibold py-2 px-6 rounded-full transition-colors border border-blue-200"> Call Us </a>
+                  <a href="contact.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-semibold py-2 px-6 rounded-full transition-colors"> Send Message </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
