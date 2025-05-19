@@ -19,6 +19,15 @@
       h6 {
         font-family: "Outfit", sans-serif;
       }
+      .fade-in-up {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-up.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
@@ -92,7 +101,7 @@
       </div>
 
       <!-- Why Choose Us Section -->
-      <div class="bg-gradient-to-b from-gray-50 to-white py-6 md:py-8 relative overflow-hidden">
+      <div class="bg-gradient-to-b from-gray-50 to-white py-6 md:py-8 relative overflow-hidden fade-in-up">
         <!-- Decorative background elements -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
         <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-100 rounded-full opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
@@ -104,7 +113,7 @@
           <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6">
               <!-- Trusted Caregivers -->
-              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
                 <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">👨‍⚕️</div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-800 mb-1 md:mb-2">Trusted Caregivers</h3>
@@ -113,7 +122,7 @@
               </div>
 
               <!-- In-Home Care -->
-              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
                 <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">🏠</div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-800 mb-1 md:mb-2">Personalized In-Home Care</h3>
@@ -122,7 +131,7 @@
               </div>
 
               <!-- Affordable Plans -->
-              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
                 <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">💙</div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-800 mb-1 md:mb-2">Affordable Care Plans</h3>
@@ -131,7 +140,7 @@
               </div>
 
               <!-- Local Trusted Business -->
-              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+              <div class="flex items-center space-x-4 bg-white p-4 md:p-6 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300">
                 <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl">🤝</div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-800 mb-1 md:mb-2">Your Local Trusted Partner</h3>
@@ -144,7 +153,7 @@
       </div>
 
       <!-- Specialized Care Services Section -->
-      <div class="bg-white py-12">
+      <div class="bg-white py-12 fade-in-up">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center text-gray-800 mb-3">Specialized Care Services</h2>
           <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">We provide a wide range of specialized care services to meet your specific healthcare needs.</p>
@@ -154,7 +163,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <!-- Alzheimer's and Dementia Care -->
               <div
-                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end"
+                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end hover:scale-105"
                 style="background-image: url('images/service-alzheimers.jpg')"
               >
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-opacity duration-300 rounded-2xl"></div>
@@ -166,7 +175,7 @@
 
               <!-- Parkinson's Care -->
               <div
-                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end"
+                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end hover:scale-105"
                 style="background-image: url('images/service-parkinsons.jpg')"
               >
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-opacity duration-300 rounded-2xl"></div>
@@ -178,7 +187,7 @@
 
               <!-- Companion Care -->
               <div
-                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end"
+                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end hover:scale-105"
                 style="background-image: url('images/service-companion.jpg')"
               >
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-opacity duration-300 rounded-2xl"></div>
@@ -190,7 +199,7 @@
 
               <!-- Respite Care -->
               <div
-                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end"
+                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end hover:scale-105"
                 style="background-image: url('images/service-respite.jpg')"
               >
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-opacity duration-300 rounded-2xl"></div>
@@ -202,7 +211,7 @@
 
               <!-- Regular Check-ins -->
               <div
-                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end"
+                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end hover:scale-105"
                 style="background-image: url('images/service-checkins.jpg')"
               >
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-opacity duration-300 rounded-2xl"></div>
@@ -214,7 +223,7 @@
 
               <!-- Personal Care -->
               <div
-                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end"
+                class="group relative rounded-2xl hover:shadow-xl transition-all duration-300 overflow-hidden bg-cover bg-center min-h-[200px] p-6 flex flex-col justify-end hover:scale-105"
                 style="background-image: url('images/service-personal.jpg')"
               >
                 <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-opacity duration-300 rounded-2xl"></div>
@@ -226,14 +235,16 @@
             </div>
 
             <div class="text-center mt-8">
-              <a href="services.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-semibold py-3 px-8 rounded-full transition-colors shadow-md">View All Services</a>
+              <a href="services.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-semibold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg hover:scale-105"
+                >View All Services</a
+              >
             </div>
           </div>
         </div>
       </div>
 
       <!-- Areas We Serve Section -->
-      <div class="bg-gray-50 py-8 md:py-10">
+      <div class="bg-gray-50 py-8 md:py-10 fade-in-up">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">Areas We Serve</h2>
           <p class="text-gray-600 text-center max-w-3xl mx-auto mb-6 md:mb-8">Proudly serving the Twin Cities metro area and surrounding communities with compassionate healthcare services.</p>
@@ -350,8 +361,15 @@
               <div class="mt-6 md:mt-8 text-center bg-blue-50 rounded-xl p-4 md:p-6">
                 <p class="text-gray-700 mb-3">Not sure if we serve your area? Contact us to find out!</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
-                  <a href="tel:+1234567890" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-semibold py-2 px-5 rounded-full transition-colors border border-blue-200"> Call Us </a>
-                  <a href="contact.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-semibold py-2 px-5 rounded-full transition-colors"> Send Message </a>
+                  <a
+                    href="tel:+1234567890"
+                    class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-semibold py-2 px-5 rounded-full transition-colors border border-blue-200 hover:shadow-md hover:scale-105"
+                  >
+                    Call Us
+                  </a>
+                  <a href="contact.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-semibold py-2 px-5 rounded-full transition-colors hover:shadow-md hover:scale-105">
+                    Send Message
+                  </a>
                 </div>
               </div>
             </div>
@@ -360,11 +378,11 @@
       </div>
 
       <!-- Testimonials Section -->
-      <div class="bg-gray-50 py-16">
+      <div class="bg-gray-50 py-16 fade-in-up">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Patients Say</h2>
           <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <span class="text-blue-600 font-semibold text-xl">A.P.</span>
@@ -376,7 +394,7 @@
               </div>
               <p class="text-gray-700">"The care provided has been consistently excellent. The staff is kind, attentive, and truly makes a difference in daily life."</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
               <div class="flex items-center mb-4">
                 <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <span class="text-blue-600 font-semibold text-xl">B.K.</span>
@@ -393,11 +411,13 @@
       </div>
 
       <!-- CTA Section -->
-      <div class="bg-blue-600 text-white py-12">
+      <div class="bg-blue-600 text-white py-12 fade-in-up">
         <div class="container mx-auto px-4 text-center">
           <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Experience Better Healthcare?</h2>
           <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Schedule your appointment today and take the first step towards better health with our expert medical team.</p>
-          <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md"> Book Your Visit Now </a>
+          <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg hover:scale-105">
+            Book Your Visit Now
+          </a>
         </div>
       </div>
     </main>
@@ -462,6 +482,36 @@
     <script>
       document.getElementById("mobile-menu-button").addEventListener("click", function () {
         document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const animatedElements = document.querySelectorAll(".fade-in-up");
+
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 } // Trigger when 10% of the element is visible
+          );
+
+          animatedElements.forEach((el) => {
+            observer.observe(el);
+          });
+        } else {
+          // Fallback for browsers that don't support IntersectionObserver
+          animatedElements.forEach((el) => {
+            el.classList.add("is-visible");
+          });
+        }
       });
     </script>
   </body>
