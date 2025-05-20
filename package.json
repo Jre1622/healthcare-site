@@ -4,7 +4,7 @@
   "description": "```\r healthcare-site\r ├─ about.html\r ├─ contact.html\r ├─ css\r │  └─ styles.css\r ├─ fonts\r ├─ images\r ├─ index.html\r ├─ js\r │  └─ main.js\r ├─ robots.txt\r ├─ services.html\r └─ team.html",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx @tailwindcss/cli -i ./css/input.css -o ./css/styles.css --minify",
+    "build:css": "npx @tailwindcss/cli -c ./tailwind.config.js -i ./css/input.css -o ./css/styles.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

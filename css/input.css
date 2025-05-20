@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@layer theme {
+  :root {
+    /* Primary & Supporting Blues - Trust, Calm, Professionalism */
+    --color-blue-50: #f0f6fa; /* Very light, soft blue */
+    --color-blue-100: #e0eff5; /* Light, soft blue */
+    --color-blue-200: #c9e2ee; /* Gentle light blue */
+    --color-blue-500: #659dbd; /* Primary Muted Blue - Trustworthy & Approachable */
+    --color-blue-600: #5087a8; /* Darker supporting blue */
+    --color-blue-700: #3e708f; /* Even darker, for text or strong accents */
+    --color-blue-900: #2c5573; /* Darkest blue, for deep accents or overlays */
+
+    /* Warm & Soft Neutrals - Comfort, Clarity */
+    --color-gray-50: #fdfbf8; /* Very light warm cream */
+    --color-gray-100: #f9f5f0; /* Warm cream - for light backgrounds */
+    --color-gray-200: #f2ede7; /* Soft warm gray */
+    --color-gray-300: #eae0d6; /* Light beige - for subtle text, borders */
+    --color-gray-400: #d5c8ba; /* Medium beige - for less important text */
+    --color-gray-600: #8d7b6d; /* Soft brown - good for secondary text */
+    --color-gray-700: #6b5b4e; /* Medium brown - primary body text on light backgrounds */
+    --color-gray-800: #4a3f35; /* Dark brown - for headings or strong text */
+
+    /* Accent Color - Warmth, Compassion, Positive Action */
+    --color-accent-100: #fdece2; /* Very light peach for subtle backgrounds or highlights */
+    --color-accent-300: #f7c9b0; /* Light peach */
+    --color-accent-500: #f2a07b; /* Soft Coral/Peach - for CTAs, highlights */
+    --color-accent-700: #d97e57; /* Darker peach/coral for stronger accents or text */
+
+    /* Core Black & White */
+    --color-white: #fffcfa; /* Soft off-white - primary page background */
+    --color-black: #1f1f1f; /* Very dark gray (almost black) - for high contrast text if needed, softer than pure #000 */
+    /* --color-black: #000000; */ /* Pure black if preferred */
+
+    /* You can add any other default Tailwind colors here if you need to ensure they are defined */
+  }
+}
