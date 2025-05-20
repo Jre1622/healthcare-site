@@ -19,6 +19,15 @@
       h6 {
         font-family: "Outfit", sans-serif;
       }
+      .fade-in-up {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-up.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
@@ -44,7 +53,7 @@
       <!-- Mobile Navigation Bar -->
       <nav class="bg-blue-500 p-4 flex justify-between items-center md:hidden shadow-md">
         <!-- Phone Button -->
-        <a href="tel:+1234567890" class="text-white hover:text-blue-200 p-2" aria-label="Call us">
+        <a href="tel:+17633775088" class="text-white hover:text-blue-200 p-2" aria-label="Call us">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM5.1 5h1.7c.1.9.3 1.8.5 2.6L5.8 9.1c-.4 1.2-.6 2.5-.7 3.9zm15.8 14h-1.7c-.1-.9-.3-1.8-.5-2.6l1.6-1.6c.4-1.2.6-2.5.7-3.9z"
@@ -74,39 +83,272 @@
       </div>
     </div>
 
-    <main class="flex-grow container mx-auto px-4 py-8">
-      <div class="max-w-4xl mx-auto">
-        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission & Values</h2>
-          <p class="text-gray-700 mb-6">
-            We are a team of dedicated healthcare professionals committed to providing compassionate and comprehensive care. Our mission is to improve the health and well-being of the communities we
-            serve through excellence in patient care, education, and research.
-          </p>
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <div class="relative bg-cover bg-center min-h-[200px] flex items-center" style="background-image: url('./images/about-hero.jpg')">
+        <!-- Overlay with gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-blue-600/60 backdrop-blur-sm"></div>
 
-          <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Our Team</h2>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Medical Professionals</h3>
-              <p class="text-gray-700">
-                Our experienced team includes board-certified physicians, registered nurses, and specialized medical staff, all committed to delivering exceptional patient care.
-              </p>
+        <div class="container relative mx-auto px-4 py-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3 text-white drop-shadow-lg">About WeHelp Home Care Services</h1>
+            <p class="text-lg text-gray-50 drop-shadow">Our story, our mission, and the passionate team behind our healthcare services.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Mission Section with Visual Appeal -->
+      <div class="bg-white py-8 fade-in-up">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-bold text-gray-800 mb-3">Our Mission & Values</h2>
+              <div class="w-20 h-1 bg-blue-500 mx-auto mb-4"></div>
             </div>
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Support Staff</h3>
-              <p class="text-gray-700">Our dedicated support team ensures smooth operations and a welcoming environment for all patients, from reception to administrative services.</p>
+
+            <div class="bg-gradient-to-r from-blue-50 to-white p-6 rounded-xl shadow-sm border border-blue-100 mb-8">
+              <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                We are a team of dedicated healthcare professionals committed to providing compassionate and comprehensive care. Our mission is to improve the health and well-being of the communities
+                we serve through excellence in patient care, education, and research.
+              </p>
+
+              <div class="grid md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                  <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-blue-600 text-xl">❤️</span>
+                  </div>
+                  <h3 class="font-semibold text-blue-600 mb-2">Compassion</h3>
+                  <p class="text-gray-600 text-sm">We approach every patient with genuine care and empathy, recognizing the unique needs of each individual.</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                  <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-blue-600 text-xl">✨</span>
+                  </div>
+                  <h3 class="font-semibold text-blue-600 mb-2">Excellence</h3>
+                  <p class="text-gray-600 text-sm">We maintain the highest standards of professional care and continuously improve our services.</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
+                  <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-blue-600 text-xl">🤝</span>
+                  </div>
+                  <h3 class="font-semibold text-blue-600 mb-2">Integrity</h3>
+                  <p class="text-gray-600 text-sm">We act with honesty, transparency, and ethical responsibility in all our interactions.</p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Our History</h2>
-          <p class="text-gray-700 mb-4">
-            Founded with the vision of providing accessible, high-quality healthcare to our community, we have grown from a small clinic to a comprehensive healthcare provider.
-          </p>
-          <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-            <li>Established in [Year] with a focus on primary care</li>
-            <li>Expanded services to include specialized medical treatments</li>
-            <li>Integrated modern technology and telehealth solutions</li>
-            <li>Continuous growth in serving our local communities</li>
-          </ul>
+      <!-- Our Team Section -->
+      <div class="bg-gray-50 py-12 fade-in-up">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Expert Team</h2>
+              <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+              <p class="text-gray-600 max-w-2xl mx-auto">Our dedicated professionals bring together decades of experience to provide exceptional healthcare services.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex items-start space-x-4">
+                  <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="text-blue-600 text-xl">👨‍⚕️</span>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Medical Professionals</h3>
+                    <p class="text-gray-700 mb-4">
+                      Our experienced team includes board-certified physicians, registered nurses, and specialized medical staff, all committed to delivering exceptional patient care.
+                    </p>
+                    <ul class="text-gray-600 space-y-1">
+                      <li class="flex items-center">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        Certified healthcare practitioners
+                      </li>
+                      <li class="flex items-center">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        Specialized training in geriatric care
+                      </li>
+                      <li class="flex items-center">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        Regular professional development
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex items-start space-x-4">
+                  <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="text-blue-600 text-xl">👥</span>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Support Staff</h3>
+                    <p class="text-gray-700 mb-4">Our dedicated support team ensures smooth operations and a welcoming environment for all patients, from reception to administrative services.</p>
+                    <ul class="text-gray-600 space-y-1">
+                      <li class="flex items-center">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        Patient coordination specialists
+                      </li>
+                      <li class="flex items-center">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        Administrative professionals
+                      </li>
+                      <li class="flex items-center">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        Client relationship managers
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our History Timeline Section -->
+      <div class="bg-white py-12 fade-in-up">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Journey</h2>
+              <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+              <p class="text-gray-600 max-w-2xl mx-auto">From our humble beginnings to where we are today, our commitment to quality healthcare has never wavered.</p>
+            </div>
+
+            <div class="relative border-l-4 border-blue-200 pl-10 ml-6 space-y-10 py-4">
+              <!-- Timeline Item 1 -->
+              <div class="relative">
+                <div class="absolute -left-14 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span class="text-white font-bold">1</span>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                  <h3 class="text-xl font-semibold text-blue-600 mb-2">2015</h3>
+                  <p class="text-gray-700">Established with a focus on primary care and a small team of dedicated healthcare professionals.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2 -->
+              <div class="relative">
+                <div class="absolute -left-14 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span class="text-white font-bold">2</span>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                  <h3 class="text-xl font-semibold text-blue-600 mb-2">2018</h3>
+                  <p class="text-gray-700">Expanded services to include specialized medical treatments and in-home care options.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3 -->
+              <div class="relative">
+                <div class="absolute -left-14 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span class="text-white font-bold">3</span>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                  <h3 class="text-xl font-semibold text-blue-600 mb-2">2020</h3>
+                  <p class="text-gray-700">Integrated modern technology and telehealth solutions to better serve our patients during challenging times.</p>
+                </div>
+              </div>
+
+              <!-- Timeline Item 4 -->
+              <div class="relative">
+                <div class="absolute -left-14 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span class="text-white font-bold">4</span>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                  <h3 class="text-xl font-semibold text-blue-600 mb-2">Today</h3>
+                  <p class="text-gray-700">Continuous growth in serving our local communities with an expanded team of specialists and broader service offerings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards & Recognition Section -->
+      <div class="bg-gray-50 py-12 fade-in-up">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4">Recognition & Certifications</h2>
+              <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
+                <div class="text-3xl text-blue-500 mb-2">🏆</div>
+                <p class="text-gray-700 text-sm font-medium">Healthcare Excellence Award 2023</p>
+              </div>
+
+              <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
+                <div class="text-3xl text-blue-500 mb-2">✓</div>
+                <p class="text-gray-700 text-sm font-medium">JCAHO Accredited</p>
+              </div>
+
+              <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
+                <div class="text-3xl text-blue-500 mb-2">⭐</div>
+                <p class="text-gray-700 text-sm font-medium">5-Star CMS Rating</p>
+              </div>
+
+              <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-gray-100">
+                <div class="text-3xl text-blue-500 mb-2">🌟</div>
+                <p class="text-gray-700 text-sm font-medium">Top Care Provider 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="bg-blue-600 text-white py-12 fade-in-up">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Learn More About Our Services?</h2>
+          <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Discover how our dedicated team can provide the care you or your loved ones deserve.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="services.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg"> Explore Our Services </a>
+            <a href="contact.html" class="inline-block bg-transparent text-white border-2 border-white hover:bg-white/10 font-bold py-3 px-8 rounded-full transition-colors"> Contact Us </a>
+          </div>
         </div>
       </div>
     </main>
@@ -142,13 +384,13 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
           <div class="space-y-2">
-            <p class="text-gray-300">📞 <a href="tel:+1234567890" class="hover:text-white transition-colors">(123) 456-7890</a></p>
+            <p class="text-gray-300">📞 <a href="tel:+17633775088" class="hover:text-white transition-colors">763-377-5088</a></p>
             <p class="text-gray-300">✉️ <a href="mailto:contact@healthcareservices.com" class="hover:text-white transition-colors">contact@healthcareservices.com</a></p>
-            <div class="text-gray-300">
-              📍
-              <address class="inline-block">
-                123 Health St<br />
-                Wellness City, HC 45678
+            <div class="text-gray-300 flex items-center">
+              <span class="mt-1">📍</span>
+              <address class="ml-2">
+                7741 Main Street Unit 300 <br />
+                Fridley, MN 55432
               </address>
             </div>
             <div class="pt-4">
@@ -163,7 +405,7 @@
 
       <!-- Copyright Section -->
       <div class="text-center text-gray-400 text-sm mt-8 pt-8 border-t border-gray-600">
-        <p>&copy; 2024 Healthcare Services. All rights reserved.</p>
+        <p>&copy; 2025 WeHelp Home Care Services. All rights reserved.</p>
       </div>
     </footer>
 
@@ -171,6 +413,36 @@
     <script>
       document.getElementById("mobile-menu-button").addEventListener("click", function () {
         document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const animatedElements = document.querySelectorAll(".fade-in-up");
+
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 } // Trigger when 10% of the element is visible
+          );
+
+          animatedElements.forEach((el) => {
+            observer.observe(el);
+          });
+        } else {
+          // Fallback for browsers that don't support IntersectionObserver
+          animatedElements.forEach((el) => {
+            el.classList.add("is-visible");
+          });
+        }
       });
     </script>
   </body>
