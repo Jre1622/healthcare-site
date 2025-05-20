@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services & Areas Served - Healthcare Services</title>
+    <title>Services - Healthcare Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,6 +18,15 @@
       h5,
       h6 {
         font-family: "Outfit", sans-serif;
+      }
+      .fade-in-up {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-up.is-visible {
+        opacity: 1;
+        transform: translateY(0);
       }
     </style>
     <link href="./css/styles.css" rel="stylesheet" />
@@ -36,7 +45,7 @@
         <ul class="flex justify-center space-x-4">
           <li><a href="index.html" class="text-white hover:text-blue-200">Home</a></li>
           <li><a href="about.html" class="text-white hover:text-blue-200">About Us</a></li>
-          <li><a href="services.html" class="text-white hover:text-blue-200">Services & Areas Served</a></li>
+          <li><a href="services.html" class="text-white hover:text-blue-200">Services</a></li>
           <li><a href="contact.html" class="text-white hover:text-blue-200">Contact</a></li>
         </ul>
       </nav>
@@ -44,7 +53,7 @@
       <!-- Mobile Navigation Bar -->
       <nav class="bg-blue-500 p-4 flex justify-between items-center md:hidden shadow-md">
         <!-- Phone Button -->
-        <a href="tel:+1234567890" class="text-white hover:text-blue-200 p-2" aria-label="Call us">
+        <a href="tel:+17633775088" class="text-white hover:text-blue-200 p-2" aria-label="Call us">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM5.1 5h1.7c.1.9.3 1.8.5 2.6L5.8 9.1c-.4 1.2-.6 2.5-.7 3.9zm15.8 14h-1.7c-.1-.9-.3-1.8-.5-2.6l1.6-1.6c.4-1.2.6-2.5.7-3.9z"
@@ -68,97 +77,143 @@
         <div class="px-4 py-3 space-y-1">
           <a href="index.html" class="block text-white hover:bg-blue-600 rounded px-3 py-2">Home</a>
           <a href="about.html" class="block text-white hover:bg-blue-600 rounded px-3 py-2">About Us</a>
-          <a href="services.html" class="block text-white hover:bg-blue-600 rounded px-3 py-2">Services & Areas Served</a>
+          <a href="services.html" class="block text-white hover:bg-blue-600 rounded px-3 py-2">Services</a>
           <a href="contact.html" class="block text-white hover:bg-blue-600 rounded px-3 py-2">Contact</a>
         </div>
       </div>
     </div>
 
-    <main class="flex-grow container mx-auto px-4 py-8">
-      <div class="max-w-4xl mx-auto">
-        <!-- Services Section -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 class="text-2xl font-semibold text-gray-800 mb-4">Comprehensive Medical Care</h2>
-          <p class="text-gray-700 mb-6">
-            We offer a wide range of medical services to meet your needs, from routine check-ups to specialized treatments. Our experienced medical staff is here to provide you with personalized care.
-          </p>
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <div class="relative bg-cover bg-center min-h-[200px] flex items-center" style="background-image: url('./images/services-hero.jpg')">
+        <!-- Overlay with gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-blue-600/60 backdrop-blur-sm"></div>
 
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Primary Care Services</h3>
-              <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>Annual Physical Examinations</li>
-                <li>Preventive Care & Screenings</li>
-                <li>Immunizations</li>
-                <li>Chronic Disease Management</li>
-              </ul>
+        <div class="container relative mx-auto px-4 py-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3 text-white drop-shadow-lg">Our Healthcare Services</h1>
+            <p class="text-lg text-gray-50 drop-shadow">Comprehensive care solutions tailored to meet your unique healthcare needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div class="bg-white py-8 fade-in-up">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+              <h2 class="text-3xl font-bold text-gray-800 mb-3">Our Specialized Care Services</h2>
+              <div class="w-20 h-1 bg-blue-500 mx-auto mb-4"></div>
+              <p class="text-gray-700 mb-6">
+                We provide a wide range of specialized care services to meet your specific healthcare needs, focusing on compassionate and personalized support in the comfort of your home.
+              </p>
             </div>
 
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Specialty Services</h3>
-              <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>Cardiology</li>
-                <li>Pediatrics</li>
-                <li>Orthopedics</li>
-                <li>Women's Health</li>
-              </ul>
-            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <!-- Alzheimer's & Dementia Care -->
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div class="mx-auto sm:mx-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span class="text-blue-600 text-xl">🧩</span>
+                    </div>
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Alzheimer's & Dementia Care</h3>
+                    <p class="text-gray-700">Specialized support focusing on safety, comfort, and maintaining dignity for those with memory-related conditions.</p>
+                  </div>
+                </div>
+              </div>
 
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Diagnostic Services</h3>
-              <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>Laboratory Testing</li>
-                <li>X-ray & Imaging</li>
-                <li>EKG/ECG</li>
-                <li>Ultrasound</li>
-              </ul>
-            </div>
+              <!-- Parkinson's Care -->
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div class="mx-auto sm:mx-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span class="text-blue-600 text-xl">💪</span>
+                    </div>
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Parkinson's Care</h3>
+                    <p class="text-gray-700">Tailored assistance for managing symptoms and improving quality of life for those with Parkinson's disease.</p>
+                  </div>
+                </div>
+              </div>
 
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Wellness Programs</h3>
-              <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>Health Education</li>
-                <li>Nutrition Counseling</li>
-                <li>Weight Management</li>
-                <li>Smoking Cessation</li>
-              </ul>
+              <!-- Companion Care -->
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div class="mx-auto sm:mx-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span class="text-blue-600 text-xl">😊</span>
+                    </div>
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Companion Care</h3>
+                    <p class="text-gray-700">Friendly companionship and social engagement to combat loneliness and support emotional wellbeing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Respite Care -->
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div class="mx-auto sm:mx-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span class="text-blue-600 text-xl">🛋️</span>
+                    </div>
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Respite Care</h3>
+                    <p class="text-gray-700">Temporary relief for family caregivers, ensuring your loved one receives uninterrupted quality care.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Regular Check-ins -->
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div class="mx-auto sm:mx-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span class="text-blue-600 text-xl">✅</span>
+                    </div>
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Regular Check-ins</h3>
+                    <p class="text-gray-700">Scheduled visits to ensure wellbeing, medication adherence, and address evolving care needs promptly.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Personal Care -->
+              <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div class="mx-auto sm:mx-0">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span class="text-blue-600 text-xl">🧼</span>
+                    </div>
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Personal Care</h3>
+                    <p class="text-gray-700">Dignified assistance with daily activities such as bathing, dressing, and personal hygiene.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Areas Served Section -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <h2 class="text-2xl font-semibold text-gray-800 mb-4">Areas We Serve</h2>
-          <p class="text-gray-700 mb-6">We are proud to provide exceptional healthcare services to residents in the following areas:</p>
-
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Primary Service Areas</h3>
-              <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>Wellness City Center</li>
-                <li>North Healthville</li>
-                <li>Eastside Medical Park</li>
-                <li>Southborough Community</li>
-              </ul>
-            </div>
-
-            <div class="bg-blue-50 p-4 rounded-lg">
-              <h3 class="text-xl font-semibold text-blue-600 mb-3">Extended Coverage</h3>
-              <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>West Health District</li>
-                <li>Central Medical Zone</li>
-                <li>Riverside Health Region</li>
-                <li>Highland Medical Area</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mt-6 p-4 bg-blue-50 rounded-lg">
-            <h3 class="text-xl font-semibold text-blue-600 mb-3">Telehealth Services</h3>
-            <p class="text-gray-700">
-              We also offer telehealth services to patients in remote areas. Contact us to learn more about virtual consultations and remote healthcare options.
-              <a href="contact.html" class="text-blue-600 hover:text-blue-800 underline">Get in touch</a> to discuss your specific location and needs.
-            </p>
+      <!-- CTA Section -->
+      <div class="bg-blue-600 text-white py-12 fade-in-up">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Experience Our Healthcare Services?</h2>
+          <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Contact us today to schedule an appointment or learn more about how we can address your healthcare needs.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors shadow-md hover:shadow-lg">
+              Schedule a Consultation
+            </a>
+            <a href="about.html" class="inline-block bg-transparent text-white border-2 border-white hover:bg-white/10 font-bold py-3 px-8 rounded-full transition-colors"> Learn About Us </a>
           </div>
         </div>
       </div>
@@ -176,18 +231,10 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
-            <li>
-              <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a>
-            </li>
-            <li>
-              <a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services & Areas Served</a>
-            </li>
-            <li>
-              <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
-            </li>
+            <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
 
@@ -195,13 +242,13 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
           <div class="space-y-2">
-            <p class="text-gray-300">📞 <a href="tel:+1234567890" class="hover:text-white transition-colors">(123) 456-7890</a></p>
+            <p class="text-gray-300">📞 <a href="tel:+17633775088" class="hover:text-white transition-colors">763-377-5088</a></p>
             <p class="text-gray-300">✉️ <a href="mailto:contact@healthcareservices.com" class="hover:text-white transition-colors">contact@healthcareservices.com</a></p>
-            <div class="text-gray-300">
-              📍
-              <address class="inline-block">
-                123 Health St<br />
-                Wellness City, HC 45678
+            <div class="text-gray-300 flex items-center">
+              <span class="mt-1">📍</span>
+              <address class="ml-2">
+                7741 Main Street Unit 300 <br />
+                Fridley, MN 55432
               </address>
             </div>
             <div class="pt-4">
@@ -216,7 +263,7 @@
 
       <!-- Copyright Section -->
       <div class="text-center text-gray-400 text-sm mt-8 pt-8 border-t border-gray-600">
-        <p>&copy; 2024 Healthcare Services. All rights reserved.</p>
+        <p>&copy; 2025 WeHelp Home Care Services. All rights reserved.</p>
       </div>
     </footer>
 
@@ -224,6 +271,36 @@
     <script>
       document.getElementById("mobile-menu-button").addEventListener("click", function () {
         document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const animatedElements = document.querySelectorAll(".fade-in-up");
+
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 } // Trigger when 10% of the element is visible
+          );
+
+          animatedElements.forEach((el) => {
+            observer.observe(el);
+          });
+        } else {
+          // Fallback for browsers that don't support IntersectionObserver
+          animatedElements.forEach((el) => {
+            el.classList.add("is-visible");
+          });
+        }
       });
     </script>
   </body>
